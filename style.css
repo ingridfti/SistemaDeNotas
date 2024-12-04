@@ -1,0 +1,163 @@
+/* Estilo básico para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do formulário */
+.container {
+    background-color: #1f1f1f; /* Fundo escuro para o formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Largura ajustada */
+}
+
+/* Estilo para o título */
+h1 {
+    text-align: center;
+    color: #f1f1f1; /* Cor clara para o título */
+    font-size: 24px;
+}
+
+/* Estilo para o parágrafo de descrição */
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #b3b3b3; /* Texto mais suave */
+}
+
+/* Estilo dos rótulos */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #e0e0e0; /* Cor clara para os rótulos */
+}
+
+/* Estilo dos campos de input e select */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #333; /* Borda mais escura */
+    border-radius: 4px;
+    background-color: #333; /* Fundo escuro nos campos */
+    color: #e0e0e0; /* Texto claro nos campos */
+    font-size: 14px;
+}
+
+/* Estilo dos botões */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Azul suave */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para botões */
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* Efeito ativo para botões */
+button:active {
+    background-color: #004085; /* Azul mais escuro quando pressionado */
+}
+
+/* Estilo para a área de resultado */
+#resultado {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1e1e1e; /* Fundo escuro para o resultado */
+    border: 1px solid #444; /* Borda mais escura */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #e0e0e0; /* Texto claro no resultado */
+}
+
+/* Estilo para o histórico */
+#historico {
+    margin-top: 15px;
+}
+
+#historico h3 {
+    color: #f1f1f1; /* Cor mais clara para o título do histórico */
+    margin-bottom: 10px;
+}
+
+/* Estilo da lista do histórico */
+#listaHistorico {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaHistorico li {
+    background-color: #333; /* Fundo escuro para os itens */
+    padding: 8px;
+    border: 1px solid #444; /* Borda mais escura para os itens */
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Estilo para o botão de exibir/ocultar histórico */
+#toggleHistorico {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #28a745; /* Verde suave */
+    color: white;
+    font-size: 14px;
+}
+
+/* Efeito hover para o botão de exibir/ocultar histórico */
+#toggleHistorico:hover {
+    background-color: #218838; /* Verde mais escuro no hover */
+}
+
+/* Adicionando emojis */
+h1::before {
+    content: "🎓 "; /* Emoji de chapéu de formando antes do título */
+}
+
+#calcular::before {
+    content: "🧮 "; /* Emoji de calculadora antes do botão de calcular */
+}
+
+#limpar::before {
+    content: "🧹 "; /* Emoji de vassoura antes do botão de limpar */
+}
+
+#listarHistorico::before {
+    content: "📜 "; /* Emoji de pergaminho antes do botão de histórico */
+}
+
+#toggleHistorico::before {
+    content: "🔽 "; /* Emoji de seta para baixo antes do botão de exibir/ocultar histórico */
+}
+
+/* Estilo do parágrafo dentro do resultado */
+#resultado p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
